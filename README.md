@@ -310,7 +310,7 @@ Create a `.env` file in the project root directory with the following variables:
 ```env
 # LLM API Keys
 GROQ_API_KEY=your_groq_api_key_here
-OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
 
 # External Search
 TAVILY_API_KEY=your_tavily_api_key_here
@@ -337,13 +337,13 @@ APP_ENV=development
 | Variable | Description | Example | Required |
 |---|---|---|---|
 | `GROQ_API_KEY` | API key for Groq LLM (routing, grading, generation) | `gsk_...` | Yes |
-| `OPENAI_API_KEY` | API key for OpenAI (embeddings and fallback LLM) | `sk-...` | Yes |
+| `GEMINI_API_KEY` | API key for Google Gemini | `AIza...` | Yes |
 | `TAVILY_API_KEY` | API key for Tavily web search | `tvly-...` | Yes |
 | `PINECONE_API_KEY` | API key for Pinecone vector database | `pckey-...` | Yes |
 | `PINECONE_INDEX_NAME` | Pinecone index name | `fde-it-support-rag` | Optional (default: `fde-it-support-rag`) |
 | `PINECONE_NAMESPACE` | Pinecone namespace for document isolation | `company-it-kb` | Optional (default: `company-it-kb`) |
 | `GROQ_MODEL` | Groq model identifier | `openai/gpt-oss-20b` | Optional (default: `openai/gpt-oss-20b`) |
-| `OPENAI_MODEL` | OpenAI model identifier | `gpt-4o-mini` | Optional (default: `gpt-4o-mini`) |
+| `GEMINI_MODEL` | Google Gemini model identifier | `gemini-2.5-flash` | Optional (default: `gemini-2.5-flash`) |
 | `EMBEDDING_MODEL` | Embedding model for vectorization | `text-embedding-3-small` | Optional (default: `text-embedding-3-small`) |
 | `ADMIN_API_KEY` | Secret key for admin endpoints (document ingestion) | `your-secure-key` | Optional (default: `change-me`) |
 | `APP_ENV` | Application environment | `development` or `production` | Optional (default: `development`) |
